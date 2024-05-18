@@ -18,7 +18,6 @@ console.log(SKILLS)
         <section className="skills-container">
             <h5>Technical Proficiency</h5>
 
-            <div className='skills-content'>
                 <div className="skills-content">
                     <div className='skills'>
                         {SKILLS.map((item) => (
@@ -41,7 +40,7 @@ console.log(SKILLS)
                         />
                     </div>
                 </div>
-            </div>
+        
         </section>
     )
 }
