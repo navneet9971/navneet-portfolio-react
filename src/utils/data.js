@@ -42,4 +42,11 @@ export const SKILLS = [
             {skill: "Time Management", percentage: "85%"},
         ],
     }
+];
+
+
+export const WORK_EXPERIENCE = [
+    {
+        
+    }
 ]
