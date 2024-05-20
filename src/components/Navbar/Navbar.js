@@ -44,7 +44,7 @@ const Navbar = () => {
 
             <button className='menu-btn' onClick={toggleMenu}>
                 <span 
-                class={"material-symbols-outlined"}
+                className={"material-symbols-outlined"}
                 style={{fontSize:"1.8rem"}}
                 >
                     {openMenu ? "close" : "menu"}

@@ -3,7 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Skills from "./components/Skills/Skills";
-import WorkExperienced from "./components/WorkExperienced/WorkExperienced";
+import WorkExperience from "./components/WorkExperienced/WorkExperience";
 
 const App = () => {
 
@@ -14,7 +14,7 @@ const App = () => {
     <div className="container">
       <Hero />
       <Skills />
-      <WorkExperienced />
+      <WorkExperience />
     </div>
     </>
   )

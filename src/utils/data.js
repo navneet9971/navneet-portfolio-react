@@ -47,7 +47,7 @@ export const SKILLS = [
 
 export const WORK_EXPERIENCE = [
     {
-        title: "Senior Frontend Developer at Aicansell",
+        title: "Frontend Developer at Aicansell",
         date: "April 2024 - Present",
         responsibilities: [
             "Managed and developed multiple projects from inception, including the Learning Lens project, Eikomp Website, Aicansell User Panel, and CRM Panel for admins.",
@@ -61,7 +61,7 @@ export const WORK_EXPERIENCE = [
         ],
     },
     {
-        title: "Senior Frontend Developer at Netpuppys",
+        title: "Frontend Developer at Netpuppys",
         date: "October 2023 - April 2024",
         responsibilities: [
             "Led the development of the TIS school website, focusing on creating an intuitive and accessible interface for students and teachers.",
