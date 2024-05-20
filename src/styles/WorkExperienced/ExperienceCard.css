@@ -13,6 +13,7 @@
     font-size: 1.05rem;
     font-weight: 500;
     margin-bottom: 0.7rem;
+    text-align: left;
 }
 
 .work-duration {
@@ -31,6 +32,8 @@
     font-weight: 400;
     margin-bottom: 0.5rem;
     position: relative;
+
+    text-align: left;
 }
 
 .work-experience-card ul li::after {
@@ -43,5 +46,22 @@
     position: absolute;
     left: -1.3rem;
     top: 0.35rem;
+}
+
+@media (max-width: 768px) {
+
+
+    .work-experience-card {
+        margin: 0;
+    }
+
+    .work-experience-card h6{
+
+        font-size: 0.95rem;
+    }
+
+    .work-experience-card ul li {
+        font-size: 0.75rem;
+    }
 }
 

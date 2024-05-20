@@ -1,62 +1,55 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import "../../styles/WorkExperienced/WorkExperience.css";
 import { WORK_EXPERIENCE } from "../../utils/data";
 import ExperienceCard from "./ExperienceCard/ExperienceCard";
-import Slider from "react-slick";
-
+import { Carousel } from 'react-responsive-carousel';
 
 const WorkExperience = () => {
-    const sliderRef = useRef();
+    const [selectedIndex, setSelectedIndex] = useState(0);
 
-    const settings = {
-        dots: false,
-        Infinite: true,
-        speed: 500,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: false,
-        responsive: [
-            {
-       breakpoint: 769,
-       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-       },
-            },
-        ],
+    const handlePrevSlide = () => {
+        setSelectedIndex((selectedIndex - 1 + WORK_EXPERIENCE.length) % WORK_EXPERIENCE.length);
     };
 
-const slideRight = () => {
-    sliderRef.current.slickNext();
-}
-
-const slideLeft = () => {
-    sliderRef.current.slickPrev();
-}
+    const handleNextSlide = () => {
+        setSelectedIndex((selectedIndex + 1) % WORK_EXPERIENCE.length);
+    };
 
     return (
         <section className="experience-container">
             <h5>Work Experience</h5>
 
             <div className="experience-content">
-<div className="arrow-right" onClick={slideRight}>
-    <span className="material-symbols-outlined">chevron_right</span>
-</div>
+                <div className="arrow-left" onClick={handlePrevSlide}>
+                    <span className="material-symbols-outlined">chevron_left</span>
+                </div>
 
-<div className="arrow-left" onClick={slideLeft}>
-    <spna className="material-symbols-outlined">chevron_left</spna>
-</div>
+                <Carousel
+    selectedItem={selectedIndex}
+    showArrows={false}
+    showStatus={false}
+    showIndicators={false}
+    showThumbs={false}
+    infiniteLoop={true}
+    swipeable={true}
+    emulateTouch={true}
+    renderThumbs={() => {}}
+    slidesToShow={2} 
+    slidesToScroll={1} 
+    thumbWidth={100}
+>
+    {WORK_EXPERIENCE.map((item) => (
+        <ExperienceCard key={item.title} details={item} />
+    ))}
+</Carousel>
 
 
-<Slider ref={sliderRef} {...settings} >
-                {WORK_EXPERIENCE.map ((item) => (
-                    <ExperienceCard key={item.title} details={item} />
-                ))}
-                </Slider>
+                <div className="arrow-right" onClick={handleNextSlide}>
+                    <span className="material-symbols-outlined">chevron_right</span>
+                </div>
             </div>
         </section>
-    )
-
-}
+    );
+};
 
 export default WorkExperience;
