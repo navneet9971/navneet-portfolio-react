@@ -21,8 +21,8 @@ const Navbar = () => {
 
     <nav className="nav-wrapper">
         <div className='nav-content'>
-            <img className='logo' src={logo} alt="" />
-
+            {/* <img className='logo' src={logo} alt="" /> */}
+           <span className='logo'>PortFolio</span>
             <ul>
                 <li>
                     <a className="menu-item">Home</a>

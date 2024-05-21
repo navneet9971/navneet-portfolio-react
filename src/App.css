@@ -1,7 +1,7 @@
 .container {
   max-width: 1300px !important;
   margin: 0 auto;
-  position: absolute;
+  position: relative;
 }
 
 @media (max-width: 1300px) {
