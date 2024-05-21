@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "../../styles/Navbar/Navbar.css";
-import logo from "../../assets/images/navbar-logo.jpg";
+// import logo from "../../assets/images/navbar-logo.jpg";
 import MobileNav from './MobileNav/MobileNav';
 
 const Navbar = () => {
@@ -25,16 +25,16 @@ const Navbar = () => {
            <span className='logo'>PortFolio</span>
             <ul>
                 <li>
-                    <a className="menu-item">Home</a>
+                    <a className="menu-item" href='#home'>Home</a>
                 </li>
                 <li>
-                    <a className="menu-item">Skills</a>
+                    <a className="menu-item" href='#skills'>Skills</a>
                 </li>
                 <li>
-                    <a className="menu-item">Work Experience</a>
+                    <a className="menu-item" href='#work'>Work Experience</a>
                 </li>
                 <li>
-                    <a className="menu-item">Contact us</a>
+                    <a className="menu-item" href='contact'>Contact us</a>
                 </li>
 
                 <button className='contact-btn' onClick={() => {}}>
