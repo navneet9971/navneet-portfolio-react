@@ -2,7 +2,7 @@ import React from "react";
 import "../../styles/Hero/Hero.css";
 
 import reactLogo from "../../assets/images/react-logo.png";
-import personImg from "../../assets/images/person-img.jpg";
+import personImg from "../../assets/images/person-img.jpeg";
 import htmlLogo from "../../assets/images/html-logo.png";
 import cssLogo from "../../assets/images/css-logo.png";
 import jsLogo from "../../assets/images/js-logo.png";
